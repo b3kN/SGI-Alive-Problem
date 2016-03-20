@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        
-        <script type="text/javascript" src="script.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>
+      Problem Playground #1
+    </title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;        
+      }
+      
+      ul li {
+        padding-bottom: 15px;
+      }
+      
+      label {
+        display: block;
+        font-weight: 700;
+      }
+      
+      .inline {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <ul>
+        <li>
+          <label>
+            Data set by string:
+          </label>
+          <span id="dataset"></span>
+        </li>
+        <li>
+          <label class="inline">
+            Highest count per year:
+          </label>
+          <span id="count"></span>
+        </li>
+        <li>
+          <label>
+            Years with highest count:
+          </label>
+          <span id="yearList"></span>
+        </li>
+        <li>
+          <label>
+            Persons alive on highest years:
+          </label>
+          <span id="personsList"></span>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
